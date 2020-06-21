@@ -1,0 +1,9 @@
+{
+  "name": "Clarion Foodery",
+  "phone": "8145555555",
+  "website": "clarionfoodery.com",
+  "address": {
+    "street": "14 Shady",
+    "city": "Clarion"
+  }
+}
