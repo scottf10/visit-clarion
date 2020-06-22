@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import logo from '../../static/img/logo.png'
-import eats from '../../site/data/eats/'
+
 
 export const IndexPageTemplate = ({
   image,
@@ -81,7 +81,7 @@ export const IndexPageTemplate = ({
                           <img class="tile image is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
                         </div>
                         <div class="tile is-parent is-vertical">
-                          <img class="tile image is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
+                          <img class="tile image is-4by3 is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
                           <img class="tile image is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
                         </div>
                       </div>
@@ -90,7 +90,7 @@ export const IndexPageTemplate = ({
 
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
-                      Latest stories
+                      Latest storiess
                   </h3>
                     <BlogRoll />
                     <div className="column is-12 has-text-centered">
