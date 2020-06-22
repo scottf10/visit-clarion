@@ -81,7 +81,7 @@ export const IndexPageTemplate = ({
                           <img class="tile image is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
                         </div>
                         <div class="tile is-parent is-vertical">
-                          <img class="tile image is-4by3 is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
+                          <img class="tile image is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
                           <img class="tile image is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
                         </div>
                       </div>
