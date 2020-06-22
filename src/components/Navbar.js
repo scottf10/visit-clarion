@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+
 import headerlogo from '../../static/img/headerlogo.png'
 
 const Navbar = class extends React.Component {

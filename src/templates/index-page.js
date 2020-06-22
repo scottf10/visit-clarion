@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import logo from '../../static/img/logo.png'
+import eats from '../../site/data/eats/'
 
 export const IndexPageTemplate = ({
   image,
