@@ -1,0 +1,9 @@
+{
+  "name": "Bob's Sub",
+  "phone": "8145555555",
+  "website": "bobssub.com",
+  "address": {
+    "street": "123 Main Street",
+    "city": "Clarion"
+  }
+}
