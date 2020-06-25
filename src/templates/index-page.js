@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
@@ -77,12 +76,12 @@ export const IndexPageTemplate = ({
                   <section class="section">
                     <div class="container">
                       <div class="tile is-ancestor">
-                        <div class="tile is-parent is-7">
-                          <img class="tile image is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
+                        <div class="tile image is-parent is-7">
+                          <img class="tile is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
                         </div>
-                        <div class="tile is-parent is-vertical">
-                          <img class="tile image is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
-                          <img class="tile image is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
+                        <div class="tile image is-parent is-vertical">
+                          <img class="tile is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
+                          <img class="tile is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
                         </div>
                       </div>
                     </div>
