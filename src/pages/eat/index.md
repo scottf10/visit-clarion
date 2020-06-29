@@ -1,4 +1,5 @@
 ---
+templateKey: 'eat-page'
 title: Eat food
 image: /img/products-grid3.jpg
 heading: Heading
