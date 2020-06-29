@@ -7,6 +7,7 @@ import BlogRoll from '../components/BlogRoll'
 import logo from '../../static/img/logo.png'
 
 
+
 export const IndexPageTemplate = ({
   image,
   title,
