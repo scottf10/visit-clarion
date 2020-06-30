@@ -1,4 +1,5 @@
 ---
+templateKey: 'play-page'
 title: Play Something
 image: /img/chemex.jpg
 heading: Heading
