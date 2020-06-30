@@ -1,4 +1,5 @@
 ---
+templateKey: 'product-page'
 title: Stay Page
 image: /img/chemex.jpg
 heading: Heading
