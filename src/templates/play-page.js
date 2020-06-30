@@ -66,7 +66,7 @@ PlayPageTemplate.propTypes = {
   }),
 }
 
-const PLayPage = ({ data }) => {
+const PlayPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
