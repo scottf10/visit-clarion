@@ -1,4 +1,5 @@
 ---
+templateKey: 'stay-page'
 title: Stay Page
 image: /img/apple-touch-icon.png
 heading: Heading

@@ -83,7 +83,7 @@ collections:
 
       - file: "src/pages/stay/index.md"
         label: "Stay Page"
-        name: "eat"
+        name: "stay"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "stay-page"}
           - {label: Title, name: title, widget: string}
