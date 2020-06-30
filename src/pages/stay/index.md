@@ -1,7 +1,6 @@
 ---
-templateKey: 'stay-page'
 title: Stay Page
-image: /img/apple-touch-icon.png
+image: /img/chemex.jpg
 heading: Heading
 description: Descriptor
 intro:
