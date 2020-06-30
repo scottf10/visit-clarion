@@ -7,7 +7,7 @@ import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-export const EatPageTemplate = ({
+export const StayPageTemplate = ({
   image,
   title,
   heading,
@@ -101,7 +101,7 @@ export const EatPageTemplate = ({
   </div>
 )
 
-EatPageTemplate.propTypes = {
+StayPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
@@ -125,12 +125,12 @@ EatPageTemplate.propTypes = {
   }),
 }
 
-const EatPage = ({ data }) => {
+const StayPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
-      <EatPageTemplate
+      <StayPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
@@ -145,7 +145,7 @@ const EatPage = ({ data }) => {
   )
 }
 
-EatPage.propTypes = {
+StayPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -153,10 +153,10 @@ EatPage.propTypes = {
   }),
 }
 
-export default EatPage
+export default StayPage
 
-export const eatPageQuery = graphql`
-  query EatPage($id: String!) {
+export const stayPageQuery = graphql`
+  query StayPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
