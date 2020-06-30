@@ -1,5 +1,5 @@
 ---
-templateKey: 'eat-page'
+templateKey: eat-page
 title: Eat food
 image: /img/products-grid3.jpg
 heading: Heading
@@ -19,5 +19,8 @@ main:
   image3:
     image: /img/chemex.jpg
     alt: Gonna delete this
+testimonials:
+  - quote: need one here
+    author: Hope Itfixesmyerror
 full_image: /img/products-full-width.jpg
 ---
