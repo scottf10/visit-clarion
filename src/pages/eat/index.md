@@ -22,5 +22,5 @@ main:
 testimonials:
   - quote: need one here
     author: Hope Itfixesmyerror
-full_image: /img/products-full-width.jpg
+full_image: /img/blog-index.jpg
 ---
