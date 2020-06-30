@@ -1,4 +1,5 @@
 ---
+templateKey: 'stay-page'
 title: Stay Page
 image: /img/products-grid3.jpg
 heading: Heading
