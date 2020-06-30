@@ -1,7 +1,6 @@
 ---
-templateKey: 'product-page'
 title: Stay Page
-image: /img/chemex.jpg
+image: /img/products-grid3.jpg
 heading: Heading
 description: Descriptor
 intro:
