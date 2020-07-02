@@ -18,29 +18,63 @@ export const EatPageTemplate = ({
   fullImage,
   pricing,
 }) => (
-  <div className="content">
-    <div
-      className="full-width-image-container margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-      }}
-    >
-      <h2
-        className="has-text-weight-bold is-size-1"
+    <div className="content">
+      <div
+        className="full-width-image-container margin-top-0"
         style={{
-          boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-          backgroundColor: '#f40',
-          color: 'white',
-          padding: '1rem',
+          backgroundImage: `url(${
+            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+            })`,
         }}
       >
-        {title}
-      </h2>
+        <h2
+          className="has-text-weight-bold is-size-1"
+          style={{
+            boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
+            backgroundColor: '#f40',
+            color: 'white',
+            padding: '1rem',
+          }}
+        >
+          {title}
+        </h2>
+      </div>
+      <div className="container">
+      <div className="tile is-ancestor">
+        <div className="tile is-vertical">
+          <div className="tile">
+            <div className="tile is-parent is-vertical">
+              <article className="tile is-child">
+                <PreviewCompatibleImage imageInfo={main.image1} />
+              </article>
+            </div>
+            <div className="tile is-parent">
+              <article className="tile is-child">
+                <PreviewCompatibleImage imageInfo={main.image2} />
+              </article>
+            </div>
+          </div>
+          <div className="tile is-parent">
+            <article className="tile is-child">
+              <PreviewCompatibleImage imageInfo={main.image3} />
+            </article>
+          </div>
+        </div>
+      </div>
+      <Testimonials testimonials={testimonials} />
+      </div>
+      <div
+        className="full-width-image-container"
+        style={{
+          backgroundImage: `url(${
+            fullImage.childImageSharp
+              ? fullImage.childImageSharp.fluid.src
+              : fullImage
+            })`,
+        }}
+      />
     </div>
-  </div>
-)
+  )
 
 EatPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
