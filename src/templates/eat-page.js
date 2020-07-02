@@ -30,8 +30,8 @@ export const EatPageTemplate = ({
         <h2
           className="has-text-weight-bold is-size-1"
           style={{
-            boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-            backgroundColor: '#f40',
+            boxShadow: '0.5rem 0 0 #df9508, -0.5rem 0 0 #df9508',
+            backgroundColor: '#df9508',
             color: 'white',
             padding: '1rem',
           }}
@@ -39,29 +39,38 @@ export const EatPageTemplate = ({
           {title}
         </h2>
       </div>
+
       <div className="container">
-      <div className="tile is-ancestor">
-        <div className="tile is-vertical">
-          <div className="tile">
-            <div className="tile is-parent is-vertical">
-              <article className="tile is-child">
-                <PreviewCompatibleImage imageInfo={main.image1} />
-              </article>
+        <div className="columns">
+          <div className="column is-7">
+            <h3 className="has-text-weight-semibold is-size-3">
+              {main.heading}
+            </h3>
+            <p>{main.description}</p>
+          </div>
+        </div>
+        <div className="tile is-ancestor">
+          <div className="tile is-vertical">
+            <div className="tile">
+              <div className="tile is-parent is-vertical">
+                <article className="tile is-child">
+                  <PreviewCompatibleImage imageInfo={main.image1} />
+                </article>
+              </div>
+              <div className="tile is-parent">
+                <article className="tile is-child">
+                  <PreviewCompatibleImage imageInfo={main.image2} />
+                </article>
+              </div>
             </div>
             <div className="tile is-parent">
               <article className="tile is-child">
-                <PreviewCompatibleImage imageInfo={main.image2} />
+                <PreviewCompatibleImage imageInfo={main.image3} />
               </article>
             </div>
           </div>
-          <div className="tile is-parent">
-            <article className="tile is-child">
-              <PreviewCompatibleImage imageInfo={main.image3} />
-            </article>
-          </div>
         </div>
-      </div>
-      <Testimonials testimonials={testimonials} />
+        <Testimonials testimonials={testimonials} />
       </div>
       <div
         className="full-width-image-container"
@@ -73,6 +82,179 @@ export const EatPageTemplate = ({
             })`,
         }}
       />
+      <div class="container margin-y-80">
+
+        <div class="tile is-ancestor is-vertical">
+          <div class="tile is-parent">
+            <div class="tile is-child card is-4">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"></img>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"></img>
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">John Smith</p>
+                    <p class="subtitle is-6">@johnsmith</p>
+                  </div>
+                </div>
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+            <a href="#">#css</a> <a href="#">#responsive</a>
+                  <br></br>
+                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                </div>
+              </div>
+            </div>
+            <div class="tile is-child card is-4">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"></img>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"></img>
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">John Smith</p>
+                    <p class="subtitle is-6">@johnsmith</p>
+                  </div>
+                </div>
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+            <a href="#">#css</a> <a href="#">#responsive</a>
+                  <br></br>
+                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                </div>
+              </div>
+            </div>
+            <div class="tile is-child card is-4">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"></img>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"></img>
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">John Smith</p>
+                    <p class="subtitle is-6">@johnsmith</p>
+                  </div>
+                </div>
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+            <a href="#">#css</a> <a href="#">#responsive</a>
+                  <br></br>
+                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child card is-4">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"></img>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"></img>
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">John Smith</p>
+                    <p class="subtitle is-6">@johnsmith</p>
+                  </div>
+                </div>
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+            <a href="#">#css</a> <a href="#">#responsive</a>
+                  <br></br>
+                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                </div>
+              </div>
+            </div>
+            <div class="tile is-child card is-4">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"></img>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"></img>
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">John Smith</p>
+                    <p class="subtitle is-6">@johnsmith</p>
+                  </div>
+                </div>
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+            <a href="#">#css</a> <a href="#">#responsive</a>
+                  <br></br>
+                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                </div>
+              </div>
+            </div>
+            <div class="tile is-child card is-4">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"></img>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"></img>
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">John Smith</p>
+                    <p class="subtitle is-6">@johnsmith</p>
+                  </div>
+                </div>
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+            <a href="#">#css</a> <a href="#">#responsive</a>
+                  <br></br>
+                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   )
 
