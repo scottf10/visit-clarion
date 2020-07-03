@@ -1,6 +1,6 @@
 ---
 title: Uber Page
-image: /img/blog-index.jpg
+image: /img/products-grid2.jpg
 heading: Heading
-description: Descriptor
+description: Descriptorr
 ---
