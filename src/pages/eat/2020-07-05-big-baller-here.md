@@ -1,5 +1,5 @@
 ---
-templateKey: eat-directory
+templateKey: eat-page
 title: Big baller here
 date: 2020-07-05T03:43:43.420Z
 description: descirptions
