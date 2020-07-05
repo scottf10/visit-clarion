@@ -6,7 +6,6 @@ import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import logo from '../../static/img/logo.png'
 
-
 export const IndexPageTemplate = ({
   image,
   title,
@@ -56,7 +55,7 @@ export const IndexPageTemplate = ({
                       <h3 className="subtitle">{mainpitch.description}</h3>
                     </div>
                   </div>
-
+   
                   <section class="section">
                     <div class="container">
                       <div class="tile is-ancestor">
