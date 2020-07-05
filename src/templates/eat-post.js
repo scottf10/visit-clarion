@@ -6,7 +6,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const BlogPost2Template = ({
+export const EatPostTemplate = ({
   content,
   contentComponent,
   description,
@@ -46,7 +46,7 @@ export const BlogPost2Template = ({
   )
 }
 
-BlogPost2Template.propTypes = {
+EatPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -54,17 +54,17 @@ BlogPost2Template.propTypes = {
   helmet: PropTypes.object,
 }
 
-const BlogPost2 = ({ data }) => {
+const EatPost = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <BlogPost2Template
+      <EatPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet titleTemplate="%s | Eat">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
@@ -79,16 +79,16 @@ const BlogPost2 = ({ data }) => {
   )
 }
 
-BlogPost2.propTypes = {
+EatPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 }
 
-export default BlogPost2
+export default EatPost
 
 export const pageQuery = graphql`
-  query BlogPost2ByID($id: String!) {
+  query EatPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
