@@ -72,7 +72,7 @@ export default () => (
       query EatRollQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "eat-directory" } } }
+          filter: { frontmatter: { templateKey: { eq: "eat-page" } } }
         ) {
           edges {
             node {
