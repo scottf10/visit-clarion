@@ -38,7 +38,7 @@ class EatRoll extends React.Component {
                     </Link>
                     <span> &bull; </span>
                     <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
+                      {post.frontmatter.email}
                     </span>
                   </p>
                 </header>
@@ -47,7 +47,7 @@ class EatRoll extends React.Component {
                   <br />
                   <br />
                   <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
+                    More Info →
                   </Link>
                 </p>
               </article>
@@ -80,11 +80,15 @@ export default () => (
               id
               fields {
                 slug
+                
               }
               frontmatter {
                 title
+                phone
+                email
+                address
+                site
                 templateKey
-                date(formatString: "MMMM DD, YYYY")
                 featuredpost
                 featuredimage {
                   childImageSharp {
