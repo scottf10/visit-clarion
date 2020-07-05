@@ -1,4 +1,6 @@
 ---
+templateKey: 'eat-page'
+path: /eatpage
 title: Page Host
 image: /img/flavor_wheel.jpg
 heading: Page heading
