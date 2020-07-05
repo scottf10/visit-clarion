@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const EatPostTemplate = ({
   content,
@@ -18,8 +19,65 @@ export const EatPostTemplate = ({
 
   return (
     <section className="section">
+
       {helmet || ''}
       <div className="container content">
+        <div className="container">
+          <div className="section">
+            <div className="columns">
+              <div className="column is-7 is-offset-1">
+                <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
+                <p>{description}</p>
+              </div>
+            </div>
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
+                <Features gridItems={intro.blurbs} />
+                <div className="columns">
+                  <div className="column is-7">
+                    <h3 className="has-text-weight-semibold is-size-3">
+                      {main.heading}
+                    </h3>
+                    <p>{main.description}</p>
+                  </div>
+                </div>
+                <div className="tile is-ancestor">
+                  <div className="tile is-vertical">
+                    <div className="tile">
+                      <div className="tile is-parent is-vertical">
+                        <article className="tile is-child">
+                          <PreviewCompatibleImage imageInfo={main.image1} />
+                        </article>
+                      </div>
+                      <div className="tile is-parent">
+                        <article className="tile is-child">
+                          <PreviewCompatibleImage imageInfo={main.image2} />
+                        </article>
+                      </div>
+                    </div>
+                    <div className="tile is-parent">
+                      <article className="tile is-child">
+                        <PreviewCompatibleImage imageInfo={main.image3} />
+                      </article>
+                    </div>
+                  </div>
+                </div>
+                <Testimonials testimonials={testimonials} />
+                <div
+                  className="full-width-image-container"
+                  style={{
+                    backgroundImage: `url(${
+                      fullImage.childImageSharp
+                        ? fullImage.childImageSharp.fluid.src
+                        : fullImage
+                      })`,
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
@@ -64,7 +122,7 @@ const EatPost = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Eatery">
+          <Helmet titleTemplate="%s | Eat">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
