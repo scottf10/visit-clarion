@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import EatRoll from '../components/EatRoll'
 
-export const EatDirectoryTemplate = ({
+export const EatPageTemplate = ({
   content,
   contentComponent,
   description,
@@ -53,7 +53,7 @@ export const EatDirectoryTemplate = ({
   )
 }
 
-EatDirectoryTemplate.propTypes = {
+EatPageTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -61,12 +61,12 @@ EatDirectoryTemplate.propTypes = {
   helmet: PropTypes.object,
 }
 
-const EatDirectory = ({ data }) => {
+const EatPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <EatDirectoryTemplate
+      <EatPageTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
@@ -86,16 +86,16 @@ const EatDirectory = ({ data }) => {
   )
 }
 
-EatDirectory.propTypes = {
+EatPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 }
 
-export default EatDirectory
+export default EatPage
 
 export const pageQuery = graphql`
-  query EatDirectoryByID($id: String!) {
+  query EatPageByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
