@@ -26,9 +26,9 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-  - name: "eat"
-    label: "Eat"
-    folder: "src/pages/eat"
+  - name: "eatpost"
+    label: "Eatpost"
+    folder: "src/pages/eatpost"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -63,9 +63,9 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/eatpage/index.md"
-        label: "Eat Page"
-        name: "eatpage"
+      - file: "src/pages/eat/index.md"
+        label: "Eat"
+        name: "eat"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "eat-page"}
           - {label: Title, name: title, widget: string}
