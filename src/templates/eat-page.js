@@ -86,7 +86,6 @@ export const EatPageTemplate = ({
                 <h3 className="has-text-weight-semibold is-size-3 ">
                   {main.heading}
                 </h3>
-                <p>{main.description}</p>
               </div>
             </div>
             <section className="section margin-top-0">
