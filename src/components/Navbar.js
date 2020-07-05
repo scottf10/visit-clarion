@@ -35,7 +35,7 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-danger"
+        className="navbar is-primary"
         role="navigation"
         aria-label="main-navigation"
       >

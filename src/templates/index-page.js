@@ -5,7 +5,6 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import logo from '../../static/img/logo.png'
-import 'bulma/css/bulma.css'
 
 
 export const IndexPageTemplate = ({
