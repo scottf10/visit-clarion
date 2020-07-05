@@ -84,10 +84,7 @@ export default () => (
               }
               frontmatter {
                 title
-                phone
-                email
-                address
-                site
+                
                 templateKey
                 featuredpost
                 featuredimage {

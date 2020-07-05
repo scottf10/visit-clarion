@@ -7,9 +7,13 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 export const EatPostTemplate = ({
+  address,
   content,
   contentComponent,
   description,
+  email,
+  phone,
+  site,
   tags,
   title,
   helmet,
@@ -27,6 +31,10 @@ export const EatPostTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
+            <p>{phone}</p>
+            <p>{email}</p>
+            <p>{address}</p>
+            <p>{site}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -50,7 +58,11 @@ export const EatPostTemplate = ({
 EatPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
+  address: PropTypes.string,
   description: PropTypes.string,
+  email: PropTypes.string,
+  phone: PropTypes.string,
+  phone: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
 }
@@ -63,13 +75,13 @@ const EatPost = ({ data }) => {
       <EatPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
-        description={post.frontmatter.description}
+        phone={post.frontmatter.phone}
         helmet={
           <Helmet titleTemplate="%s | Eat">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
-              name="description"
-              content={`${post.frontmatter.description}`}
+              name="phone"
+              content={`${post.frontmatter.phone}`}
             />
           </Helmet>
         }
@@ -95,6 +107,10 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        phone
+        email
+        address
+        site
         description
         tags
       }
