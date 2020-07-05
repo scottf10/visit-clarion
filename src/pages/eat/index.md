@@ -1,4 +1,6 @@
 ---
+templateKey: 'eat-page'
+path: /eat
 title: Title of page
 image: /img/jumbotron.jpg
 heading: Heading of page
