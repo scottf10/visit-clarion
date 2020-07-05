@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import EatRoll from '../components/EatRoll'
 
 export const EatDirectoryTemplate = ({
   content,
@@ -41,6 +42,12 @@ export const EatDirectoryTemplate = ({
             ) : null}
           </div>
         </div>
+      </div>
+      <EatRoll />
+      <div className="column is-12 has-text-centered">
+        <Link className="btn" to="/eat">
+          Read more
+                    </Link>
       </div>
     </section>
   )
