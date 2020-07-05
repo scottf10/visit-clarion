@@ -80,8 +80,8 @@ const EatPost = ({ data }) => {
           <Helmet titleTemplate="%s | Eat">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
-              name="phone"
-              content={`${post.frontmatter.phone}`}
+              name="email"
+              content={`${post.frontmatter.email}`}
             />
           </Helmet>
         }
