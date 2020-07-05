@@ -22,7 +22,7 @@ export default class EatIndexPage extends React.Component {
               padding: '1rem',
             }}
           >
-            Latest Stories
+            Places to Eat
           </h1>
         </div>
         <section className="section">
