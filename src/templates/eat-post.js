@@ -75,13 +75,16 @@ const EatPost = ({ data }) => {
       <EatPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
+        address={post.frontmatter.address}
+        email={post.frontmatter.email}
         phone={post.frontmatter.phone}
+        site={post.frontmatter.site}
         helmet={
           <Helmet titleTemplate="%s | Eat">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
-              name="email"
-              content={`${post.frontmatter.email}`}
+              name="description"
+              content={`${post.frontmatter.description}`}
             />
           </Helmet>
         }
