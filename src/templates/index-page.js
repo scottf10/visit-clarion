@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import BlogRoll2 from '../components/EatRoll'
 import logo from '../../static/img/logo.png'
 
 
@@ -78,6 +79,12 @@ export const IndexPageTemplate = ({
                     <BlogRoll />
                     <div className="column is-12 has-text-centered">
                       <Link className="btn" to="/blog">
+                        Read more
+                    </Link>
+                    </div>
+                    <EatRoll />
+                    <div className="column is-12 has-text-centered">
+                      <Link className="btn" to="/blog2">
                         Read more
                     </Link>
                     </div>
