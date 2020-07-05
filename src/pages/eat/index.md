@@ -1,15 +1,14 @@
 ---
-templateKey: 'eat-page'
+heading: Heading of page
 path: /eat
+templateKey: eat-page
 title: Title of page
 image: /img/jumbotron.jpg
-heading: Heading of page
-description: Description of page
 intro:
   heading: Heading of Intro
   description: Description of Intro
 main:
-  heading: Heading of Main
+  heading: Food & Drink
   description: Description of Main
   image1:
     image: /img/jumbotron.jpg
@@ -24,4 +23,5 @@ testimonials:
   - quote: This website rocks
     author: Anonymous
 full_image: /img/products-full-width.jpg
+description: Description of page
 ---
