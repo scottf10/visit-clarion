@@ -81,15 +81,15 @@ export const EatPageTemplate = ({
               }}
             />
 
-            <div className="columns ">
-              <div className="column is-7">
-                <h3 className="has-text-weight-semibold is-size-3 ">
-                  {main.heading}
-                </h3>
-              </div>
-            </div>
-            <section className="section margin-top-0">
+            <section className="section">
               <div className="container">
+                <div className="columns ">
+                  <div className="column is-7">
+                    <h3 className="has-text-weight-semibold is-size-3 margin-top-60">
+                      {main.heading}
+                    </h3>
+                  </div>
+                </div>
                 <div className="content">
                   <EatRoll />
                 </div>
