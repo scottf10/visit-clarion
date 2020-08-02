@@ -1,9 +1,11 @@
 ---
-templateKey: 'stay-page'
+templateKey: stay-page
 title: Stay Page
 image: /img/products-grid3.jpg
 heading: Heading
-description: Descriptor
+pricing:
+  heading: Pricing
+  description: Pricing description
 intro:
   heading: Another Heading
   description: Another Descriptor
@@ -19,8 +21,9 @@ main:
   image3:
     image: /img/coffee-gear.png
     alt: Coffee thing
+testimonials:
+  - quote: Testimonials are good
+    author: Testimonial guy
 full_image: /img/flavor_wheel.jpg
-pricing:
-  heading: Pricing
-  description: Pricing description
+description: Descriptor
 ---
