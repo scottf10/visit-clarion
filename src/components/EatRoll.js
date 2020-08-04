@@ -16,7 +16,7 @@ class EatRoll extends React.Component {
               <article
                 className={`blog-list-item tile is-child box notification ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
+                  }`}
               >
                 <header>
                   {post.frontmatter.featuredimage ? (
@@ -36,16 +36,23 @@ class EatRoll extends React.Component {
                     >
                       {post.frontmatter.title}
                     </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.email}
-                    </span>
+
+                    <ul className="cardItem">
+                      <li>
+                        <span className="subtitle is-size-5 is-block cardItem">
+                          {post.frontmatter.address}
+                        </span>
+                      </li>
+                      <li>
+                        <span className="subtitle is-size-5 is-block cardItem">
+                          {post.frontmatter.phone}
+                        </span>
+                      </li>
+                    </ul>
                   </p>
                 </header>
                 <p>
                   {post.excerpt}
-                  <br />
-                  <br />
                   <Link className="button" to={post.fields.slug}>
                     More Info →
                   </Link>
