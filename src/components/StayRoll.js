@@ -36,16 +36,17 @@ class StayRoll extends React.Component {
                     >
                       {post.frontmatter.title}
                     </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.email}
+                    <span className="is-size-5 is-block">
+                      {post.frontmatter.phone}
+                    </span>
+                    <span className="is-size-5 is-block">
+                      {post.frontmatter.address}
                     </span>
                   </p>
                 </header>
                 <p>
                   {post.excerpt}
-                  <br />
-                  <br />
+
                   <Link className="button" to={post.fields.slug}>
                     More Info →
                   </Link>
