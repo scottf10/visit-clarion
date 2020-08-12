@@ -5,6 +5,8 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import logo from '../../static/img/logo.png'
+import football from '../../static/img/football.jpg'
+import county from '../../static/img/county.jpg'
 
 export const IndexPageTemplate = ({
   image,
@@ -47,24 +49,25 @@ export const IndexPageTemplate = ({
             <div className="columns">
               <div className="column is-10 is-offset-1">
                 <div className="content">
-                  <div className="content">
+
+                  {/* <div className="content">
                     <div className="tile">
                       <h1 className="title">{mainpitch.title}</h1>
                     </div>
                     <div className="tile">
                       <h3 className="subtitle">{mainpitch.description}</h3>
                     </div>
-                  </div>
-   
+                  </div> */}
+
                   <section class="section">
                     <div class="container">
                       <div class="tile is-ancestor">
                         <div class="tile image is-parent is-7">
-                          <img class="tile is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
+                          <img class="tile is-child hoverito" ></img>
                         </div>
                         <div class="tile image is-parent is-vertical">
-                          <img class="tile is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
-                          <img class="tile is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
+                          <img class="tile is-child hoverito" src={football} alt="Events"></img>
+                          <img class="tile is-child hoverito" src={county} alt="Clarion County"></img>
                         </div>
                       </div>
                     </div>
