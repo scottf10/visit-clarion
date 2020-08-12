@@ -13,7 +13,7 @@ main:
   heading: Main heading
   description: Main descrpitor
   image1:
-    image: /img/tutorials.png
+    image: /img/cabin.jpg
     alt: Alt
   image2:
     image: /img/coffee-gear.png
