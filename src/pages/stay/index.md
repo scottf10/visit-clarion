@@ -16,7 +16,7 @@ main:
     image: /img/cabin.jpg
     alt: Alt
   image2:
-    image: /img/coffee-gear.png
+    image: /img/cabin.jpg
     alt: Counter
   image3:
     image: /img/coffee-gear.png
