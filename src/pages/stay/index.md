@@ -19,7 +19,7 @@ main:
     image: /img/cold-river.jpg
     alt: Counter
   image3:
-    image: /img/coffee-gear.png
+    image: /img/birdseye.jpg
     alt: Coffee thing
 testimonials:
   - quote: adsf
