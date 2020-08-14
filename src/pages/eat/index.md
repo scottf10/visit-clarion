@@ -8,7 +8,7 @@ intro:
   heading: Heading of Intro
   description: Description of Intro
 main:
-  heading: Food & Drink
+  heading: Grab a Bite
   description: Description of Main
   image1:
     image: /img/jumbotron.jpg
