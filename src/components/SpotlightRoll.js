@@ -47,7 +47,7 @@ class SpotlightRoll extends React.Component {
                 <p>
                   {post.excerpt}
 
-                  <Link className="button" to={post.fields.slug}>
+                  <Link className="button" to="http://www.youtube.com">
                     More Info →
                   </Link>
                 </p>
