@@ -81,7 +81,7 @@ export const EatPageTemplate = ({
               }}
             />
 
-            <section className="section margin-top-0 padding-0">
+            <section className="section padding-0">
               <div className="container">
                 <div className="columns ">
                   <div className="column is-7">

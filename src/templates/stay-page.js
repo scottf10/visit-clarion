@@ -81,7 +81,7 @@ export const StayPageTemplate = ({
               }}
             />
 
-            <section className="section">
+            <section className="section padding-0">
               <div className="container">
                 <div className="columns ">
                   <div className="column is-7">
