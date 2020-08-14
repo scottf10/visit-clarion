@@ -14,11 +14,11 @@ main:
     image: /img/jumbotron.jpg
     alt: asdf
   image2:
-    image: /img/products-grid2.jpg
-    alt: asdf
+    image: ""
+    alt: ""
   image3:
-    image: /img/flavor_wheel.jpg
-    alt: sdaf
+    image: ""
+    alt: ""
 testimonials:
   - quote: This website rocks
     author: Anonymous
