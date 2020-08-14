@@ -13,10 +13,10 @@ main:
   heading: Main heading
   description: Main descrpitor
   image1:
-    image: /img/cabin.jpg
+    image: /img/bedroom.jpg
     alt: Alt
   image2:
-    image: /img/cold-river.jpg
+    image: /img/cabin.jpg
     alt: Counter
   image3:
     image: /img/birdseye.jpg
