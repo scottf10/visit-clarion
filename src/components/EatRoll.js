@@ -46,8 +46,6 @@ class EatRoll extends React.Component {
                 </header>
                 <p>
                   {post.excerpt}
-                  <br />
-                  <br />
                   <Link className="button" to={post.fields.slug}>
                     More Info →
                   </Link>
