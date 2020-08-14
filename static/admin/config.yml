@@ -57,7 +57,9 @@ collections:
       - {label: "Email", name: "email", widget: "string", required: false}
       - {label: "Address", name: "address", widget: "string"}
       - {label: "Site", name: "site", widget: "string"}
-      - {label: "Tags", name: "tags", widget: "list"}      
+      - {label: "Tags", name: "tags", widget: "list"}
+    view_filters:
+      - {label: "Restaurants", field: "restaurants", pattern: "true"}      
 
   - name: "pages"
     label: "Pages"
