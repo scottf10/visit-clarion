@@ -2,7 +2,7 @@
 heading: Clarion County Food and Drink
 path: /eat
 templateKey: eat-page
-title: Eat
+title: Food & Drink
 image: /img/jumbotron.jpg
 description: Try out some of the best food in the region! Choose from a diverse
   selection of home style restaurants and diners. You can find some of the most
