@@ -11,14 +11,14 @@ main:
   heading: Grab a Bite
   description: Description of Main
   image1:
-    image: /img/jumbotron.jpg
-    alt: asdf
+    image: ""
+    alt: ""
   image2:
     image: ""
     alt: ""
   image3:
-    image: ""
-    alt: ""
+    image: /img/county-seat.jpg
+    alt: The County Seat
 testimonials:
   - quote: This website rocks
     author: Anonymous
