@@ -55,7 +55,7 @@ export const SpotlightPostTemplate = ({
   )
 }
 
-StayPostTemplate.propTypes = {
+SpotlightPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   address: PropTypes.string,
@@ -67,12 +67,12 @@ StayPostTemplate.propTypes = {
   helmet: PropTypes.object,
 }
 
-const StayPost = ({ data }) => {
+const SpotlightPost = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <StayPostTemplate
+      <SpotlightPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
         address={post.frontmatter.address}
@@ -80,7 +80,7 @@ const StayPost = ({ data }) => {
         phone={post.frontmatter.phone}
         site={post.frontmatter.site}
         helmet={
-          <Helmet titleTemplate="%s | Stay">
+          <Helmet titleTemplate="%s | Spotlight">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
@@ -95,16 +95,16 @@ const StayPost = ({ data }) => {
   )
 }
 
-StayPost.propTypes = {
+SpotlightPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 }
 
-export default StayPost
+export default SpotlightPost
 
 export const pageQuery = graphql`
-  query StayPostByID($id: String!) {
+  query SpotlightPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
