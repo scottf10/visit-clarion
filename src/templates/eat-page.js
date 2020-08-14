@@ -42,7 +42,7 @@ export const EatPageTemplate = ({
         <div className="container">
           <div className="section">
             <div className="columns">
-              <div className="column is-7 is-offset-1">
+              <div className="column is-7">
                 <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
                 <p>{description}</p>
               </div>
@@ -81,7 +81,7 @@ export const EatPageTemplate = ({
               }}
             />
 
-            <section className="section">
+            <section className="section margin-top-0 padding-0">
               <div className="container">
                 <div className="columns ">
                   <div className="column is-7">
