@@ -1,5 +1,5 @@
 ---
-heading: Heading of page
+heading: Clarion County Food and Drink
 path: /eat
 templateKey: eat-page
 title: Title of page
