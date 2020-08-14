@@ -11,7 +11,7 @@ intro:
   heading: Heading of Intro
   description: Description of Intro
 main:
-  heading: Grab a Bite
+  heading: Grab a Bite →
   description: Description of Main
   image1:
     image: ""
