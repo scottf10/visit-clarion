@@ -58,6 +58,20 @@ collections:
       - {label: "Address", name: "address", widget: "string"}
       - {label: "Site", name: "site", widget: "string"}
       - {label: "Tags", name: "tags", widget: "list"}    
+  
+  - name: "spotlight"
+    label: "Spotlight"
+    folder: "src/pages/spotlight"
+    create: false
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "spotlight-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
+      - {label: "Featured Image", name: "featuredimage", widget: image}
+      - {label: "Site", name: "site", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list"}    
 
   - name: "pages"
     label: "Pages"

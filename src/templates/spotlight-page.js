@@ -2,19 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Features from '../components/Features'
-import Testimonials from '../components/Testimonials'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-import EatRoll from '../components/EatRoll'
+import SpotlightRoll from '../components/SpotlightRoll'
 
-export const EatPageTemplate = ({
+export const SpotlightPageTemplate = ({
   image,
   title,
-  heading,
   description,
-  intro,
-  main,
-  testimonials,
   fullImage,
 }) => (
     <div className="content">
@@ -29,8 +23,8 @@ export const EatPageTemplate = ({
         <h2
           className="has-text-weight-bold is-size-1"
           style={{
-            // boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-            // backgroundColor: '#f40',
+            boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
+            backgroundColor: '#f40',
             color: 'white',
             padding: '1rem',
           }}
@@ -38,48 +32,20 @@ export const EatPageTemplate = ({
           {title}
         </h2>
       </div>
-      <section className="section section--gradient padding-0">
+      <section className="section section--gradient">
         <div className="container">
           <div className="section">
             <div className="columns">
-              <div className="column is-12">
+              <div className="column is-7 is-offset-1">
                 <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
-                <p className="is-centered">{description}</p>
+                <p>{description}</p>
               </div>
             </div>
 
-            <div className="tile is-ancestor">
-              <div className="tile is-vertical">
-                <div className="tile">
-                  <div className="tile is-parent is-vertical">
-                    <article className="tile is-child">
-                      <PreviewCompatibleImage imageInfo={main.image1} />
-                    </article>
-                  </div>
-                  <div className="tile is-parent">
-                    <article className="tile is-child">
-                      <PreviewCompatibleImage imageInfo={main.image2} />
-                    </article>
-                  </div>
-                </div>
-                <div className="tile is-parent">
-                  <article className="tile is-child">
-                    <PreviewCompatibleImage imageInfo={main.image3} />
-                  </article>
-                </div>
-              </div>
-            </div>
-            <Testimonials testimonials={testimonials} />
-            <div
-              className="full-width-image-container"
-              style={{
-                backgroundImage: `url(${
-                  fullImage.childImageSharp
-                    ? fullImage.childImageSharp.fluid.src
-                    : fullImage
-                  })`,
-              }}
-            />
+
+            <article className="tile is-child">
+              <PreviewCompatibleImage imageInfo={main.image1} />
+            </article>
 
             <section className="section padding-0">
               <div className="container">
@@ -91,7 +57,7 @@ export const EatPageTemplate = ({
                   </div>
                 </div>
                 <div className="content">
-                  <EatRoll />
+                  <SpotlightRoll />
                 </div>
               </div>
             </section>
@@ -102,7 +68,7 @@ export const EatPageTemplate = ({
     </div>
   )
 
-EatPageTemplate.propTypes = {
+SpotlightPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
@@ -121,26 +87,22 @@ EatPageTemplate.propTypes = {
   fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 
-const EatPage = ({ data }) => {
+const SpotlightPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
-      <EatPageTemplate
+      <SpotlightPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
-        heading={frontmatter.heading}
         description={frontmatter.description}
-        intro={frontmatter.intro}
-        main={frontmatter.main}
-        testimonials={frontmatter.testimonials}
         fullImage={frontmatter.full_image}
       />
     </Layout>
   )
 }
 
-EatPage.propTypes = {
+SpotlightPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -148,10 +110,10 @@ EatPage.propTypes = {
   }),
 }
 
-export default EatPage
+export default SpotlightPage
 
-export const eatPageQuery = graphql`
-  query EatPage($id: String!) {
+export const spotlightPageQuery = graphql`
+  query SpotlightPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title

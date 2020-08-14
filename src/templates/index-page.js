@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import SpotlightRoll from '../components/SpotlightRoll'
 import logo from '../../static/img/logo.png'
 import football from '../../static/img/football.jpg'
 import county from '../../static/img/county.jpg'
@@ -93,14 +94,18 @@ export const IndexPageTemplate = ({
                     </div>
                   </div>
 
-                  <Features gridItems={intro.blurbs} />
-                  <div className="columns">
+                  <div className="column is-12">
+                    <h3 className="has-text-weight-semibold is-size-2">
+                      Spotlight
+                  </h3>
+                    <SpotlightRoll />
                     <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/products">
-                        See all products
+                      <Link className="btn" to="/blog">
+                        Read more
                     </Link>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
