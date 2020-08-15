@@ -62,7 +62,6 @@ EatPostTemplate.propTypes = {
   description: PropTypes.string,
   email: PropTypes.string,
   phone: PropTypes.string,
-  phone: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
 }

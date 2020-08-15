@@ -42,6 +42,9 @@ class EatRoll extends React.Component {
                     <span className="is-size-5 is-block">
                       {post.frontmatter.address}
                     </span>
+                    <span className="is-size-5 is-block">
+                      {post.frontmatter.email}
+                    </span>
                   </p>
                 </header>
                 <p>
