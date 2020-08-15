@@ -165,14 +165,14 @@ export default () => (
                     }
                   }
                 }
-                feateredimage2 {
+                featuredimage2 {
                   childImageSharp {
                     fluid(maxWidth: 120, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
                 }
-                feateredimage3 {
+                featuredimage3 {
                   childImageSharp {
                     fluid(maxWidth: 120, quality: 100) {
                       ...GatsbyImageSharpFluid
