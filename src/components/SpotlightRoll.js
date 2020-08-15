@@ -60,7 +60,7 @@ class SpotlightRoll extends React.Component {
                 ) : null}
                 <article
                   className={`tile is-child ${
-                    post.frontmatter.featuredpost2 ? 'is-featured' : ''
+                    post.frontmatter.featuredpost ? 'is-featured' : ''
                     }`}
                 >
                   <header>
@@ -94,7 +94,7 @@ class SpotlightRoll extends React.Component {
                 ) : null}
                 <article
                   className={`tile is-child ${
-                    post.frontmatter.featuredpost3 ? 'is-featured' : ''
+                    post.frontmatter.featuredpost ? 'is-featured' : ''
                     }`}
                 >
                   <header>
@@ -156,8 +156,8 @@ export default () => (
                 title3
                 templateKey
                 featuredpost
-                feateredpost2
-                feateredpost3
+                featuredpost2
+                featuredpost3
                 featuredimage{
                   childImageSharp {
                     fluid(maxWidth: 120, quality: 100) {
@@ -165,20 +165,7 @@ export default () => (
                     }
                   }
                 }
-                featuredimage2{
-                  childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-                featuredimage3{
-                  childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
+                
               }
             }
           }

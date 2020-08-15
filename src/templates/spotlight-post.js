@@ -7,15 +7,11 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 export const SpotlightPostTemplate = ({
-  address,
   content,
   contentComponent,
   description,
   description2,
   description3,
-  email,
-  phone,
-  site,
   tags,
   title,
   title2,
@@ -37,10 +33,6 @@ export const SpotlightPostTemplate = ({
             <p>{description}</p>
             <p>{description2}</p>
             <p>{description3}</p>
-            <p>{phone}</p>
-            <p>{email}</p>
-            <p>{address}</p>
-            <p>{site}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -68,9 +60,6 @@ SpotlightPostTemplate.propTypes = {
   description: PropTypes.string,
   description2: PropTypes.string,
   description3: PropTypes.string,
-  email: PropTypes.string,
-  phone: PropTypes.string,
-  phone: PropTypes.string,
   title: PropTypes.string,
   title2: PropTypes.string,
   title3: PropTypes.string,
@@ -98,7 +87,7 @@ const SpotlightPost = ({ data }) => {
               name="description"
               content={`${post.frontmatter.description}`}
               name="description2"
-              content={`${post.frontmatter2.description2}`}
+              content={`${post.frontmatter.description2}`}
               name="description3"
               content={`${post.frontmatter.description3}`}
             />
