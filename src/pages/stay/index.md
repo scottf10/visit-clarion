@@ -17,7 +17,7 @@ intro:
   heading: Another Heading
   description: Another Descriptor
 main:
-  heading: Main heading
+  heading: Lodging
   description: Main descrpitor
   image1:
     image: /img/browncabin.jpg
