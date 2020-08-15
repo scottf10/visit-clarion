@@ -29,7 +29,7 @@ main:
     image: /img/trail.jpg
     alt: Coffee thing
 testimonials:
-  - quote: adsf
-    author: aadsfsd
+  - quote: " "
+    author: "  "
 full_image: /img/wild.jpg
 ---
