@@ -70,8 +70,8 @@ export const IndexPageTemplate = ({
                           <img class="tile is-child hoverito"></img> 
                         </div>
                         <div class="tile image is-parent is-vertical">
-                           <img class="tile is-child hoverito" src={cook} alt="Cook Forest"></img> 
-                          <img class="tile is-child hoverito" src={county} alt="Clarion County"></img>
+                           <a href="http://cookforest.com"><img class="tile is-child hoverito" src={cook} alt="Cook Forest" target="_blank" ></img> </a>
+                           <a href="http://www.co.clarion.pa.us/Pages/Default.aspx"><img class="tile is-child hoverito" src={county} alt="Clarion County" target="_blank" ></img> </a>
                         </div>
                       </div>
                     </div>
@@ -107,7 +107,7 @@ export const IndexPageTemplate = ({
                     </div>
                   </div> */}
 
-                  <div className="column is-12">
+                  {/* <div className="column is-12">
                     <h3 className="has-text-weight-semibold has-text-centered is-size-2">
                       Spotlight
                   </h3>
@@ -115,7 +115,7 @@ export const IndexPageTemplate = ({
                     <div className="column is-12 has-text-centered">
 
                     </div>
-                  </div>
+                  </div> */}
 
                 </div>
               </div>
