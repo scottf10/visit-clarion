@@ -4,6 +4,7 @@ title: Great coffee with a conscience
 image: /img/clarion-river.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
+full_image: /img/wild.jpg
 mainpitch:
   title: Why Kaldi
   description: >
