@@ -35,6 +35,8 @@ export const SpotlightPostTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
+            <p>{description2}</p>
+            <p>{description3}</p>
             <p>{phone}</p>
             <p>{email}</p>
             <p>{address}</p>
@@ -90,9 +92,15 @@ const SpotlightPost = ({ data }) => {
         helmet={
           <Helmet titleTemplate="%s | Spotlight">
             <title>{`${post.frontmatter.title}`}</title>
+            <title>{`${post.frontmatter.title2}`}</title>
+            <title>{`${post.frontmatter.title3}`}</title>
             <meta
               name="description"
               content={`${post.frontmatter.description}`}
+              name="description2"
+              content={`${post.frontmatter2.description2}`}
+              name="description3"
+              content={`${post.frontmatter.description3}`}
             />
           </Helmet>
         }
