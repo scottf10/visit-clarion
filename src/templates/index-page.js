@@ -5,12 +5,14 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import SpotlightRoll from '../components/SpotlightRoll'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import logo from '../../static/img/logo.png'
 import football from '../../static/img/football.jpg'
 import county from '../../static/img/county.jpg'
 
 export const IndexPageTemplate = ({
   image,
+  fullImage,
   title,
   heading,
   subheading,
@@ -85,7 +87,16 @@ export const IndexPageTemplate = ({
                     </Link>
                     </div>
                   </div>
-                  
+                  <div
+                    className="full-width-image-container margin-top-60"
+                    style={{
+                      backgroundImage: `url(${
+                        fullImage.childImageSharp
+                          ? fullImage.childImageSharp.fluid.src
+                          : fullImage
+                        })`,
+                    }}
+                  />
                   {/* <div className="columns">
                     <div className="column is-12">
                       <h3 className="has-text-weight-semibold is-size-2">
@@ -124,6 +135,7 @@ IndexPageTemplate.propTypes = {
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
+  fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 
 const IndexPage = ({ data }) => {
@@ -139,6 +151,7 @@ const IndexPage = ({ data }) => {
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
+        fullImage={frontmatter.full_image}
       />
     </Layout>
   )
@@ -171,6 +184,13 @@ export const pageQuery = graphql`
         mainpitch {
           title
           description
+        }
+        full_image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
         description
         intro {
