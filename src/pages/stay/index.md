@@ -26,10 +26,10 @@ main:
     image: /img/cabin.jpg
     alt: Counter
   image3:
-    image: /img/trussel.jpg
+    image: /img/trail.jpg
     alt: Coffee thing
 testimonials:
   - quote: adsf
     author: aadsfsd
-full_image: /img/flavor_wheel.jpg
+full_image: /img/wild.jpg
 ---
