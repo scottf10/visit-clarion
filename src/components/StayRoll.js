@@ -36,16 +36,28 @@ class StayRoll extends React.Component {
                     >
                       {post.frontmatter.title}
                     </Link>
+<<<<<<< HEAD
                     <span> &bull; </span>
                     <span className="subtitle is-size-5 is-block">
                       {post.frontmatter.email}
+=======
+                    <span className="is-size-5 is-block">
+                      {post.frontmatter.phone}
+                    </span>
+                    <span className="is-size-5 is-block">
+                      {post.frontmatter.address}
+>>>>>>> origin/master
                     </span>
                   </p>
                 </header>
                 <p>
                   {post.excerpt}
+<<<<<<< HEAD
                   <br />
                   <br />
+=======
+
+>>>>>>> origin/master
                   <Link className="button" to={post.fields.slug}>
                     More Info →
                   </Link>
@@ -85,7 +97,11 @@ export default () => (
               frontmatter {
                 title
                 address
+<<<<<<< HEAD
                 email
+=======
+          
+>>>>>>> origin/master
                 phone
                 site
                 templateKey

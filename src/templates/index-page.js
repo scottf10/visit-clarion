@@ -4,10 +4,16 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import SpotlightRoll from '../components/SpotlightRoll'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import logo from '../../static/img/logo.png'
+import football from '../../static/img/football.jpg'
+import county from '../../static/img/county.jpg'
+import cook from '../../static/img/cookforest-logo.png'
 
 export const IndexPageTemplate = ({
   image,
+  fullImage,
   title,
   heading,
   subheading,
@@ -47,24 +53,25 @@ export const IndexPageTemplate = ({
             <div className="columns">
               <div className="column is-10 is-offset-1">
                 <div className="content">
-                  <div className="content">
+
+                  {/* <div className="content">
                     <div className="tile">
                       <h1 className="title">{mainpitch.title}</h1>
                     </div>
                     <div className="tile">
                       <h3 className="subtitle">{mainpitch.description}</h3>
                     </div>
-                  </div>
-   
+                  </div> */}
+
                   <section class="section">
                     <div class="container">
                       <div class="tile is-ancestor">
                         <div class="tile image is-parent is-7">
-                          <img class="tile is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
+                          <img class="tile is-child hoverito"></img> 
                         </div>
                         <div class="tile image is-parent is-vertical">
-                          <img class="tile is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
-                          <img class="tile is-child hoverito" src="https://bulma.io/images/placeholders/128x128.png"></img>
+                           <a href="http://cookforest.com"><img class="tile is-child hoverito" src={cook} alt="Cook Forest" target="_blank" ></img> </a>
+                           <a href="http://www.co.clarion.pa.us/Pages/Default.aspx"><img class="tile is-child hoverito" src={county} alt="Clarion County" target="_blank" ></img> </a>
                         </div>
                       </div>
                     </div>
@@ -72,32 +79,44 @@ export const IndexPageTemplate = ({
 
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
-                      Latest storiess
+                      Latest Stories
                   </h3>
                     <BlogRoll />
                     <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/blog">
+                      <Link className="button" to="/blog">
                         Read more
                     </Link>
                     </div>
                   </div>
-                  <div className="columns">
+                  <div
+                    className="full-width-image-container margin-top-60"
+                    style={{
+                      backgroundImage: `url(${
+                        fullImage.childImageSharp
+                          ? fullImage.childImageSharp.fluid.src
+                          : fullImage
+                        })`,
+                    }}
+                  />
+                  {/* <div className="columns">
                     <div className="column is-12">
                       <h3 className="has-text-weight-semibold is-size-2">
                         {heading}
                       </h3>
                       <p>{description}</p>
                     </div>
-                  </div>
+                  </div> */}
 
-                  <Features gridItems={intro.blurbs} />
-                  <div className="columns">
+                  {/* <div className="column is-12">
+                    <h3 className="has-text-weight-semibold has-text-centered is-size-2">
+                      Spotlight
+                  </h3>
+                    <SpotlightRoll />
                     <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/products">
-                        See all products
-                    </Link>
+
                     </div>
-                  </div>
+                  </div> */}
+
                 </div>
               </div>
             </div>
@@ -117,6 +136,7 @@ IndexPageTemplate.propTypes = {
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
+  fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 
 const IndexPage = ({ data }) => {
@@ -132,6 +152,7 @@ const IndexPage = ({ data }) => {
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
+        fullImage={frontmatter.full_image}
       />
     </Layout>
   )
@@ -164,6 +185,13 @@ export const pageQuery = graphql`
         mainpitch {
           title
           description
+        }
+        full_image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
         description
         intro {

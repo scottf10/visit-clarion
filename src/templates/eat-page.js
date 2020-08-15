@@ -29,8 +29,8 @@ export const EatPageTemplate = ({
         <h2
           className="has-text-weight-bold is-size-1"
           style={{
-            boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-            backgroundColor: '#f40',
+            // boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
+            // backgroundColor: '#f40',
             color: 'white',
             padding: '1rem',
           }}
@@ -38,13 +38,13 @@ export const EatPageTemplate = ({
           {title}
         </h2>
       </div>
-      <section className="section section--gradient">
+      <section className="section section--gradient padding-0">
         <div className="container">
           <div className="section">
             <div className="columns">
-              <div className="column is-7 is-offset-1">
+              <div className="column is-12">
                 <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
-                <p>{description}</p>
+                <p className="is-centered">{description}</p>
               </div>
             </div>
 
@@ -71,7 +71,7 @@ export const EatPageTemplate = ({
             </div>
             <Testimonials testimonials={testimonials} />
             <div
-              className="full-width-image-container"
+              className="full-width-image-container margin-top-60"
               style={{
                 backgroundImage: `url(${
                   fullImage.childImageSharp
@@ -81,7 +81,7 @@ export const EatPageTemplate = ({
               }}
             />
 
-            <section className="section">
+            <section className="section padding-0">
               <div className="container">
                 <div className="columns ">
                   <div className="column is-7">

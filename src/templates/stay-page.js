@@ -29,8 +29,13 @@ export const StayPageTemplate = ({
         <h2
           className="has-text-weight-bold is-size-1"
           style={{
+<<<<<<< HEAD
             boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
             backgroundColor: '#f40',
+=======
+            // boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
+            // backgroundColor: '#f40',
+>>>>>>> origin/master
             color: 'white',
             padding: '1rem',
           }}
@@ -42,7 +47,11 @@ export const StayPageTemplate = ({
         <div className="container">
           <div className="section">
             <div className="columns">
+<<<<<<< HEAD
               <div className="column is-7 is-offset-1">
+=======
+              <div className="column is-12">
+>>>>>>> origin/master
                 <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
                 <p>{description}</p>
               </div>
@@ -71,7 +80,11 @@ export const StayPageTemplate = ({
             </div>
             <Testimonials testimonials={testimonials} />
             <div
+<<<<<<< HEAD
               className="full-width-image-container"
+=======
+              className="full-width-image-container margin-top-60"
+>>>>>>> origin/master
               style={{
                 backgroundImage: `url(${
                   fullImage.childImageSharp
@@ -81,7 +94,11 @@ export const StayPageTemplate = ({
               }}
             />
 
+<<<<<<< HEAD
             <section className="section">
+=======
+            <section className="section padding-0">
+>>>>>>> origin/master
               <div className="container">
                 <div className="columns ">
                   <div className="column is-7">

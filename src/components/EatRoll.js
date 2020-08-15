@@ -36,6 +36,7 @@ class EatRoll extends React.Component {
                     >
                       {post.frontmatter.title}
                     </Link>
+<<<<<<< HEAD
 
                     <ul className="cardItem">
                       <li>
@@ -49,6 +50,15 @@ class EatRoll extends React.Component {
                         </span>
                       </li>
                     </ul>
+=======
+                    <span className="is-size-5 is-block">
+                      {post.frontmatter.phone}
+                    </span>
+                    <span className="is-size-5 is-block">
+                      {post.frontmatter.address}
+                    </span>
+
+>>>>>>> origin/master
                   </p>
                 </header>
                 <p>
@@ -92,7 +102,7 @@ export default () => (
               frontmatter {
                 title
                 address
-                email
+                
                 phone
                 site
                 templateKey

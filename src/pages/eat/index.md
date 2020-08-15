@@ -1,27 +1,29 @@
 ---
-heading: Heading of page
+heading: Clarion County Food and Drink
 path: /eat
 templateKey: eat-page
-title: Title of page
-image: /img/jumbotron.jpg
+title: Food & Drink
+image: /img/shish.jpg
+description: Try out some of the best food in the region! Choose from a diverse
+  selection of home style restaurants and diners. You can find some of the most
+  unique and delicious food in the country here in Clarion County!
 intro:
   heading: Heading of Intro
   description: Description of Intro
 main:
-  heading: Food & Drink
+  heading: Grab a Bite →
   description: Description of Main
   image1:
-    image: /img/jumbotron.jpg
-    alt: asdf
+    image: ""
+    alt: ""
   image2:
-    image: /img/products-grid2.jpg
-    alt: asdf
+    image: ""
+    alt: ""
   image3:
-    image: /img/flavor_wheel.jpg
-    alt: sdaf
+    image: /img/county-seat.jpg
+    alt: The County Seat
 testimonials:
-  - quote: This website rocks
-    author: Anonymous
+  - quote: The County Seat
+    author: Clarion, PA
 full_image: /img/products-full-width.jpg
-description: Description of page
 ---
