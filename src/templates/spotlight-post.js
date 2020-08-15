@@ -56,7 +56,6 @@ export const SpotlightPostTemplate = ({
 SpotlightPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
-  address: PropTypes.string,
   description: PropTypes.string,
   description2: PropTypes.string,
   description3: PropTypes.string,
@@ -74,22 +73,15 @@ const SpotlightPost = ({ data }) => {
       <SpotlightPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
-        address={post.frontmatter.address}
-        email={post.frontmatter.email}
-        phone={post.frontmatter.phone}
         site={post.frontmatter.site}
         helmet={
           <Helmet titleTemplate="%s | Spotlight">
             <title>{`${post.frontmatter.title}`}</title>
-            <title>{`${post.frontmatter.title2}`}</title>
-            <title>{`${post.frontmatter.title3}`}</title>
+
             <meta
               name="description"
               content={`${post.frontmatter.description}`}
-              name="description2"
-              content={`${post.frontmatter.description2}`}
-              name="description3"
-              content={`${post.frontmatter.description3}`}
+
             />
           </Helmet>
         }
@@ -115,15 +107,10 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        title2
-        title3
-        phone
-        email
-        address
+
         site
         description
-        description2
-        description3
+
         tags
       }
     }

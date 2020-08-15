@@ -149,15 +149,11 @@ export default () => (
               }
               frontmatter {
                 description
-                description2
-                description3
+
                 title
-                title2
-                title3
+                
                 templateKey
                 featuredpost
-                featuredpost2
-                featuredpost3
                 featuredimage{
                   childImageSharp {
                     fluid(maxWidth: 120, quality: 100) {
@@ -165,6 +161,7 @@ export default () => (
                     }
                   }
                 }
+                
                 
               }
             }

@@ -71,7 +71,7 @@ export const StayPageTemplate = ({
             </div>
             <Testimonials testimonials={testimonials} />
             <div
-              className="full-width-image-container"
+              className="full-width-image-container margin-top-60"
               style={{
                 backgroundImage: `url(${
                   fullImage.childImageSharp
