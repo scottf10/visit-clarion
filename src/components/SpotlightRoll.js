@@ -9,50 +9,114 @@ class SpotlightRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-multiline">
+      <div className="container">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-4 dis-none" key={post.id}>
-              <article
-                className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
-              >
-                <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                        }}
-                      />
-                    </div>
-                  ) : null}
-                  <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <span className="is-size-5 is-block">
-                      {post.frontmatter.phone}
-                    </span>
-                    <span className="is-size-5 is-block">
-                      {post.frontmatter.address}
-                    </span>
-                  </p>
-                </header>
-                <p>
-                  {post.excerpt}
-
-                  <Link className="button" to="http://www.youtube.com">
-                    More Info →
+            <div class="tile is-ancestor">
+              <div class="tile is-parent is-vertical">
+                {post.frontmatter.featuredimage ? (
+                  <div className="featured-thumbnail">
+                    <PreviewCompatibleImage
+                      imageInfo={{
+                        image: post.frontmatter.featuredimage,
+                        alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                      }}
+                    />
+                  </div>
+                ) : null}
+                <article
+                  className={`blog-list-item tile is-child box notification ${
+                    post.frontmatter.featuredpost ? 'is-featured' : ''
+                    }`}
+                >
+                  <header>
+                    <p className="post-meta">
+                      <Link
+                        className="title has-text-primary is-size-4"
+                        to={post.fields.slug}
+                      >
+                        {post.frontmatter.title}
+                      </Link>
+                      <span className="is-size-5 is-block">
+                        {post.frontmatter.description}
+                      </span>
+                    </p>
+                  </header>
+                </article>
+                <Link className="button" to="http://www.youtube.com" target="_blank">
+                  More Info →
                   </Link>
-                </p>
-              </article>
+              </div>
+              <div class="tile is-parent is-vertical">
+                {post.frontmatter.featuredimage ? (
+                  <div className="featured-thumbnail">
+                    <PreviewCompatibleImage
+                      imageInfo={{
+                        image: post.frontmatter.featuredimage,
+                        alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                      }}
+                    />
+                  </div>
+                ) : null}
+                <article
+                  className={`blog-list-item tile is-child box notification ${
+                    post.frontmatter.featuredpost ? 'is-featured' : ''
+                    }`}
+                >
+                  <header>
+                    <p className="post-meta">
+                      <Link
+                        className="title has-text-primary is-size-4"
+                        to={post.fields.slug}
+                      >
+                        {post.frontmatter.title}
+                      </Link>
+                      <span className="is-size-5 is-block">
+                        {post.frontmatter.description}
+                      </span>
+                    </p>
+                  </header>
+                </article>
+                <Link className="button" to="http://www.youtube.com" target="_blank">
+                  More Info →
+                  </Link>
+              </div>
+              <div class="tile is-parent is-vertical">
+                {post.frontmatter.featuredimage ? (
+                  <div className="featured-thumbnail">
+                    <PreviewCompatibleImage
+                      imageInfo={{
+                        image: post.frontmatter.featuredimage,
+                        alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                      }}
+                    />
+                  </div>
+                ) : null}
+                <article
+                  className={`blog-list-item tile is-child box notification ${
+                    post.frontmatter.featuredpost ? 'is-featured' : ''
+                    }`}
+                >
+                  <header>
+                    <p className="post-meta">
+                      <Link
+                        className="title has-text-primary is-size-4"
+                        to={post.fields.slug}
+                      >
+                        {post.frontmatter.title}
+                      </Link>
+                      <span className="is-size-5 is-block">
+                        {post.frontmatter.description}
+                      </span>
+                    </p>
+                  </header>
+                </article>
+                <Link className="button" to="http://www.youtube.com" target="_blank">
+                  More Info →
+                  </Link>
+              </div>
             </div>
+
           ))}
       </div>
     )
@@ -84,11 +148,8 @@ export default () => (
                 
               }
               frontmatter {
+                description
                 title
-                address
-                email
-                phone
-                site
                 templateKey
                 featuredpost
                 featuredimage {
