@@ -11,11 +11,15 @@ export const SpotlightPostTemplate = ({
   content,
   contentComponent,
   description,
+  description2,
+  description3,
   email,
   phone,
   site,
   tags,
   title,
+  title2,
+  title3,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
