@@ -7,8 +7,8 @@ description: 1st
 description2: 2nd
 description3: 3rd
 featuredpost: true
-featuredpost2: true
-featuredpost3: true
+featuredpost2: false
+featuredpost3: false
 featuredimage: /img/bedroom.jpg
 featuredimage2: /img/chemex.jpg
 featuredimage3: /img/football.jpg
