@@ -11,7 +11,7 @@ export const StayPostTemplate = ({
   content,
   contentComponent,
   description,
-  email,
+
   phone,
   site,
   tags,
@@ -32,7 +32,7 @@ export const StayPostTemplate = ({
             </h1>
             <p>{description}</p>
             <p>{phone}</p>
-            <p>{email}</p>
+   
             <p>{address}</p>
             <p>{site}</p>
             <PostContent content={content} />
@@ -60,8 +60,7 @@ StayPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   address: PropTypes.string,
   description: PropTypes.string,
-  email: PropTypes.string,
-  phone: PropTypes.string,
+
   phone: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
@@ -76,7 +75,7 @@ const StayPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         address={post.frontmatter.address}
-        email={post.frontmatter.email}
+ 
         phone={post.frontmatter.phone}
         site={post.frontmatter.site}
         helmet={
@@ -111,7 +110,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         phone
-        email
+  
         address
         site
         description

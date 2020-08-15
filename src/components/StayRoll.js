@@ -86,7 +86,7 @@ export default () => (
               frontmatter {
                 title
                 address
-                email
+          
                 phone
                 site
                 templateKey

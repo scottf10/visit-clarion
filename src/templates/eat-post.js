@@ -11,7 +11,6 @@ export const EatPostTemplate = ({
   content,
   contentComponent,
   description,
-  email,
   phone,
   site,
   tags,
@@ -32,7 +31,6 @@ export const EatPostTemplate = ({
             </h1>
             <p>{description}</p>
             <p>{phone}</p>
-            <p>{email}</p>
             <p>{address}</p>
             <p>{site}</p>
             <PostContent content={content} />
@@ -60,7 +58,6 @@ EatPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   address: PropTypes.string,
   description: PropTypes.string,
-  email: PropTypes.string,
   phone: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
@@ -75,7 +72,6 @@ const EatPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         address={post.frontmatter.address}
-        email={post.frontmatter.email}
         phone={post.frontmatter.phone}
         site={post.frontmatter.site}
         helmet={
@@ -110,7 +106,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         phone
-        email
         address
         site
         description
