@@ -1,7 +1,7 @@
 ---
 templateKey: stay-page
 title: Stay Page
-image: /img/products-grid3.jpg
+image: /img/cabin.webp
 heading: Heading
 pricing:
   heading: Pricing
