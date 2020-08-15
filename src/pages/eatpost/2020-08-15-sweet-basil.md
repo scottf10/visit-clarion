@@ -1,6 +1,6 @@
 ---
 templateKey: eat-post
-title: Sweet Basil
+title: Captain Loomis Bar & Restaurant
 description: >
   American fare including steak, pasta, and hometown favorites served in a
   storied 1840’s hotel and restaurant site. 
