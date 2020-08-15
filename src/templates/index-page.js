@@ -9,6 +9,7 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import logo from '../../static/img/logo.png'
 import football from '../../static/img/football.jpg'
 import county from '../../static/img/county.jpg'
+import cook from '../../static/img/cookforest-logo.png'
 
 export const IndexPageTemplate = ({
   image,
@@ -66,10 +67,10 @@ export const IndexPageTemplate = ({
                     <div class="container">
                       <div class="tile is-ancestor">
                         <div class="tile image is-parent is-7">
-                          <img class="tile is-child hoverito" ></img>
+                          <img class="tile is-child hoverito"></img> 
                         </div>
                         <div class="tile image is-parent is-vertical">
-                          <img class="tile is-child hoverito" src={football} alt="Events"></img>
+                           <img class="tile is-child hoverito" src={cook} alt="Cook Forest"></img> 
                           <img class="tile is-child hoverito" src={county} alt="Clarion County"></img>
                         </div>
                       </div>
