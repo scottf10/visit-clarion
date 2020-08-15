@@ -158,8 +158,20 @@ export default () => (
                 featuredpost
                 feateredpost2
                 feateredpost3
-                featuredimage
-                feateredimage2
+                featuredimage {
+                  childImageSharp {
+                    fluid(maxWidth: 120, quality: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+                feateredimage2 {
+                  childImageSharp {
+                    fluid(maxWidth: 120, quality: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
                 feateredimage3 {
                   childImageSharp {
                     fluid(maxWidth: 120, quality: 100) {
