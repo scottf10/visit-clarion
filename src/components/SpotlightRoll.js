@@ -25,7 +25,7 @@ class SpotlightRoll extends React.Component {
                   </div>
                 ) : null}
                 <article
-                  className={`blog-list-item tile is-child box notification ${
+                  className={`tile is-child ${
                     post.frontmatter.featuredpost ? 'is-featured' : ''
                     }`}
                 >
@@ -48,19 +48,19 @@ class SpotlightRoll extends React.Component {
                   </Link>
               </div>
               <div class="tile is-parent is-vertical">
-                {post.frontmatter.featuredimage ? (
+                {post.frontmatter.featuredimage2 ? (
                   <div className="featured-thumbnail">
                     <PreviewCompatibleImage
                       imageInfo={{
-                        image: post.frontmatter.featuredimage,
-                        alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                        image: post.frontmatter.featuredimage2,
+                        alt: `featured image thumbnail for post ${post.frontmatter.title2}`,
                       }}
                     />
                   </div>
                 ) : null}
                 <article
-                  className={`blog-list-item tile is-child box notification ${
-                    post.frontmatter.featuredpost ? 'is-featured' : ''
+                  className={`tile is-child ${
+                    post.frontmatter.featuredpost2 ? 'is-featured' : ''
                     }`}
                 >
                   <header>
@@ -69,10 +69,10 @@ class SpotlightRoll extends React.Component {
                         className="title has-text-primary is-size-4"
                         to={post.fields.slug}
                       >
-                        {post.frontmatter.title}
+                        {post.frontmatter.title2}
                       </Link>
                       <span className="is-size-5 is-block">
-                        {post.frontmatter.description}
+                        {post.frontmatter.description2}
                       </span>
                     </p>
                   </header>
@@ -82,19 +82,19 @@ class SpotlightRoll extends React.Component {
                   </Link>
               </div>
               <div class="tile is-parent is-vertical">
-                {post.frontmatter.featuredimage ? (
+                {post.frontmatter.featuredimage3 ? (
                   <div className="featured-thumbnail">
                     <PreviewCompatibleImage
                       imageInfo={{
-                        image: post.frontmatter.featuredimage,
-                        alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                        image: post.frontmatter.featuredimage3,
+                        alt: `featured image thumbnail for post ${post.frontmatter.title3}`,
                       }}
                     />
                   </div>
                 ) : null}
                 <article
-                  className={`blog-list-item tile is-child box notification ${
-                    post.frontmatter.featuredpost ? 'is-featured' : ''
+                  className={`tile is-child ${
+                    post.frontmatter.featuredpost3 ? 'is-featured' : ''
                     }`}
                 >
                   <header>
@@ -103,10 +103,10 @@ class SpotlightRoll extends React.Component {
                         className="title has-text-primary is-size-4"
                         to={post.fields.slug}
                       >
-                        {post.frontmatter.title}
+                        {post.frontmatter.title3}
                       </Link>
                       <span className="is-size-5 is-block">
-                        {post.frontmatter.description}
+                        {post.frontmatter.description3}
                       </span>
                     </p>
                   </header>
@@ -149,10 +149,18 @@ export default () => (
               }
               frontmatter {
                 description
+                description2
+                description3
                 title
+                title2
+                title3
                 templateKey
                 featuredpost
-                featuredimage {
+                feateredpost2
+                feateredpost3
+                featuredimage
+                feateredimage2
+                feateredimage3 {
                   childImageSharp {
                     fluid(maxWidth: 120, quality: 100) {
                       ...GatsbyImageSharpFluid

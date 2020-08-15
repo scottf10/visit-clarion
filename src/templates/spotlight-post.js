@@ -60,10 +60,14 @@ SpotlightPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   address: PropTypes.string,
   description: PropTypes.string,
+  description2: PropTypes.string,
+  description3: PropTypes.string,
   email: PropTypes.string,
   phone: PropTypes.string,
   phone: PropTypes.string,
   title: PropTypes.string,
+  title2: PropTypes.string,
+  title3: PropTypes.string,
   helmet: PropTypes.object,
 }
 
@@ -110,11 +114,15 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        title2
+        title3
         phone
         email
         address
         site
         description
+        description2
+        description3
         tags
       }
     }

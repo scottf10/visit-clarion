@@ -67,10 +67,20 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "spotlight-post"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Title2", name: "title2", widget: "string"}
+      - {label: "Title3", name: "title3", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
+      - {label: "Description2", name: "description2", widget: "text"}
+      - {label: "Description3", name: "description3", widget: "text"}
       - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
+      - {label: "Featured Post2", name: "featuredpost2", widget: "boolean"}
+      - {label: "Featured Post3", name: "featuredpost3", widget: "boolean"}
       - {label: "Featured Image", name: "featuredimage", widget: image}
+      - {label: "Featured Image2", name: "featuredimage2", widget: image}
+      - {label: "Featured Image3", name: "featuredimage3", widget: image}
       - {label: "Site", name: "site", widget: "string"}
+      - {label: "Site2", name: "site2", widget: "string"}
+      - {label: "Site3", name: "site3", widget: "string"}
       - {label: "Tags", name: "tags", widget: "list"}    
 
   - name: "pages"
