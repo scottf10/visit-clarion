@@ -1,6 +1,6 @@
 ---
 templateKey: stay-page
-title: Stay Page
+title: Stay
 image: /img/cabin.webp
 heading: Heading
 pricing:
