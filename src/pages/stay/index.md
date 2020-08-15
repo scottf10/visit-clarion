@@ -26,7 +26,7 @@ main:
     image: /img/cabin.jpg
     alt: Counter
   image3:
-    image: /img/birdseye.jpg
+    image: /img/cookpic.jpg
     alt: Coffee thing
 testimonials:
   - quote: adsf
