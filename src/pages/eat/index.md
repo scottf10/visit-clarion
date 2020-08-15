@@ -23,7 +23,7 @@ main:
     image: /img/county-seat.jpg
     alt: The County Seat
 testimonials:
-  - quote: This website rocks
-    author: Anonymous
+  - quote: The County Seat
+    author: Clarion, PA
 full_image: /img/products-full-width.jpg
 ---
