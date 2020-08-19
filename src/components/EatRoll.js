@@ -36,13 +36,19 @@ class EatRoll extends React.Component {
                     >
                       {post.frontmatter.title}
                     </Link>
-                    <span className="is-size-5 is-block">
-                      {post.frontmatter.phone}
-                    </span>
-                    <span className="is-size-5 is-block">
-                      {post.frontmatter.address}
-                    </span>
 
+                    <ul className="cardItem">
+                      <li>
+                        <span className="subtitle is-size-5 is-block cardItem">
+                          {post.frontmatter.address}
+                        </span>
+                      </li>
+                      <li>
+                        <span className="subtitle is-size-5 is-block cardItem">
+                          {post.frontmatter.phone}
+                        </span>
+                      </li>
+                    </ul>
                   </p>
                 </header>
                 <p>

@@ -11,7 +11,6 @@ export const StayPostTemplate = ({
   content,
   contentComponent,
   description,
-
   phone,
   site,
   tags,
@@ -60,7 +59,6 @@ StayPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   address: PropTypes.string,
   description: PropTypes.string,
-
   phone: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
