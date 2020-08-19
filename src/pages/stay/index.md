@@ -1,13 +1,5 @@
 ---
 templateKey: stay-page
-<<<<<<< HEAD
-title: Stay Page
-image: /img/products-grid3.jpg
-heading: Heading
-pricing:
-  heading: Pricing
-  description: Pricing description
-=======
 title: Places to Stay
 image: /img/cabin.webp
 heading: An I-80 Oasis
@@ -21,7 +13,6 @@ description: "Rolling mountains, deeps valleys, and lazy rivers: Clarion County
   looking for a little revitalization, look no further. Clarion County has all
   you need. Cabins in the woods, miles of hiking trails, or a kayak ride down
   the river: this is the place to recharge, renew, and come out refreshed."
->>>>>>> origin/master
 intro:
   heading: Another Heading
   description: Another Descriptor
@@ -38,14 +29,7 @@ main:
     image: /img/trail.jpg
     alt: Coffee thing
 testimonials:
-<<<<<<< HEAD
-  - quote: Testimonials are good
-    author: Testimonial guy
-full_image: /img/flavor_wheel.jpg
-description: Descriptor
-=======
   - quote: " "
     author: "  "
 full_image: /img/wild.jpg
->>>>>>> origin/master
 ---
